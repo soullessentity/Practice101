@@ -53,9 +53,17 @@ def reverse_str(str1):
     list1 = []
     list1 = str1.split()
     print(list1)
+    list2 = []
+    
+    for i in range(0, len(list1)):
+        str3 = list1[i]
+        str4 = ""
+        for ch in str3:
+            str4 = ch + str4
+        list2.append(str4)
+    print(' '.join(list2))
 
-    for ind in list1:
-        
+
 if __name__ == '__main__':
     count_character("hello")
     is_substr("hello hi", "how are you", "hi")
